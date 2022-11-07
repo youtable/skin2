@@ -1,0 +1,50 @@
+<!--@layout(/layout.html)-->
+<!--@js(/js/fullpage.js)-->
+<!--@js(/js/fullpageexe.js)-->
+<!--@css(/css/fullpage.css)-->
+
+<div id="fullpage">
+
+    <div class="section" style="background-image: url(/web/upload/ga09/main/pc-01.jpg); background-size: cover; background-position:center; cursor:pointer" id="section1" onclick="location.href='/shop.html'"></div>
+
+	<div class="section" id="section2" style="background-image: url(/web/upload/ga09/main/pc-02.jpg); background-size: cover; background-position:center">
+		<div class="intro" onclick="location.href='/collection.html?cate_no=50'">
+            <p class="title">Lucid Collection</p>
+            <p class="sub">
+               Our mission is to help people see the best in themselves through the art and experience of fashion photography.<br>
+               We believe a photo shoot isn’t just a transformation of the way you look. It’s an evolution in the way you see yourself.
+            </p>
+		</div>
+	</div>
+
+    <div class="section" id="section3">
+		<div class="video-container">
+			<iframe src="https://www.youtube.com/embed/KY6hgCzIY0A?start=10&autohide=0&rel=0&vq=hd1080&controls=0&showinfo=0&autoplay=1&loop=1&mute=1&enablejsapi=1&modestbranding=1" frameborder="0" allowfullscreen="" data-autoplay=""></iframe>
+		</div>
+    </div>
+    
+    <div class="section fp-auto-height" id="section4">
+        <div class="myContent">
+    		<div id="bottom"><!--@import(/bottom.html)--></div>
+        </div>
+    </div>
+   
+</div>
+
+
+<!--
+
+샘플은 기본적으로 4개의 인트로로 화면이 구성되어 있습니다
+
+section1 > 단순 이미지 (배경이미지 주소 /web/upload/ga09/main/pc-01.jpg)
+section2 > 이미지 + 텍스트의 조합 (배경이미지 주소 /web/upload/ga09/main/pc-02.jpg)
+section3 > 동영상 (동영상 변경 방법은 별도의 매뉴얼 참고)
+section4 > 하단회사정보
+
+사용된 이미지는 ftp업로드로 변경하실 수 있으며, pc/모바일 각각 분리하여 관리됩니다
+또한 12-16번줄은 section2의 텍스트 영역으로 원하시는 타이틀+서브텍스트를 입력해 보세요 ^^
+
+** section1, section2의 
+onclick="location.href='★'" 영역의 ★부분엔 클릭시 이동될 주소를 넣어주세요
+
+-->
